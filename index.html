@@ -12,7 +12,10 @@
 <div id ="app">
     <h1>{{titulo}}</h1>
     <ul>
-        <li v-for="fruta of frutas">{{fruta}}</li>
+        <li v-for="fruta of frutas">{{fruta.nombre}},Cantidad
+            <span v-if="fruta.cantidad===0 ">sin stock</span>
+            <span v-if="fruta.cantidad>0 ">{{fruta.cantidad}}</span>
+        </li>
     </ul>
 </div>
 
