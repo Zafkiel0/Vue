@@ -8,5 +8,12 @@
 </head>
 <body>
     
+
+
+
+    
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="index.js"></script>
 </body>
 </html>
