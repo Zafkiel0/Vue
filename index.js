@@ -5,23 +5,25 @@ const app = new Vue ({
         {nombre:'Manzana',cantidad:20},
         {nombre:'Fresa',cantidad:20},
         {nombre:'Naranja',cantidad:0}],
-        nuevaFruta:'',total: 0
+        nuevaFruta:'', total:0
     },methods:{
         agregarFruta(){
             this.frutas.push({
                 nombre:this.nuevaFruta,cantidad:0
+
             });
             this.nuevaFruta='';
+            
         }
 
     },
     computed:{
             sumarFrutas() { 
                 this.total=0;
-                for(frut of this.frutas){
-                    this.total+= fruta.cantidad;
+                for(fruta of this.frutas){
+                    this.total=this.total+fruta.cantidad;
                 }
-              return console.log("hola");        
+              return this.total;        
                 }
     }
 })

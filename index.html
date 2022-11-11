@@ -17,13 +17,13 @@
         <li v-for="fruta of frutas">
             <input type="number"v-model.number="fruta.cantidad">{{fruta.nombre}},Cantidad
 
-            <span v-if="fruta.cantidad=== 0 ">sin stock</span>
+            <span v-if="fruta.cantidad === 0 ">sin stock</span>
             <span v-if="fruta.cantidad>0 ">{{fruta.cantidad}}</span>
             <button @click="fruta.cantidad++">+</button>
         </li>
         
     </ul>
-    <h4>Total:{{total}}</h4>
+    <h4 >Total:{{sumarFrutas}}</h4>
 </div>
 
     
